@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 1200px;
+
+    background-color: bisque;
+}
+
+
+.content-container {
+    position: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1440px;
+
+    padding : 20px 80px;
+    box-sizing: border-box;
+
+    margin-top: 110px;
+
+    background-color: blue;
+
+    row-gap: 40px;
+
+}

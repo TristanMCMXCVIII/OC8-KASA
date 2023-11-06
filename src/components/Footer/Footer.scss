@@ -1,0 +1,20 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #181818;
+
+    padding: 40px 80px;
+
+    row-gap: 20px;
+}
+
+.footer-legal {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 500;
+
+}

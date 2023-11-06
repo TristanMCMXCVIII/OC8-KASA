@@ -1,0 +1,28 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    width: 100%;
+    height: auto;
+  
+   //s background-color: bisque;
+  
+    .layout__container {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        max-width: 1440px;
+        box-sizing: border-box;
+        
+        padding : 20px 80px;
+        margin-top: 110px;
+        
+        //background-color: blue;
+        
+        row-gap: 40px;
+    
+    }
+}

@@ -1,0 +1,11 @@
+.propertyList__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crée autant de colonnes que possible avec un minimum de 200px et une fraction de l'espace disponible */
+    gap: 40px; /* Espacement entre les cartes */
+    
+
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color: #f6f6f6;
+}
