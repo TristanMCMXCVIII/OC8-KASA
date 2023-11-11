@@ -11,6 +11,7 @@ import APropos from './pages/APropos';
 import Error from './pages/Error';
 import Footer from './components/Footer';
 
+//import des données dans le router et le mettre en paramètre des composants <Route exact path='/' element={<Home logements={Logements}/>} />
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,7 +25,8 @@ root.render(
         <Route path="/APropos" element={<APropos />} />
         <Route path="*" element={<Error />} />
       </Routes>  
+      <Footer />
     </Router>
-    <Footer />
+    
   </React.StrictMode>
 );

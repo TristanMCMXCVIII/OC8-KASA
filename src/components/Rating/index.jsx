@@ -10,9 +10,9 @@ const Rating = ({ rating }) => {
 
   for (let i = 1; i <= 5; i++) {
     stars.push( i<= rating ?
-      <img src={starActive} alt='star active'/>
+      <img src={starActive} alt='star active' key={i}/>
       :
-      <img src={star} alt='star'/>
+      <img src={star} alt='star' key={i}/>
     );
   }
 

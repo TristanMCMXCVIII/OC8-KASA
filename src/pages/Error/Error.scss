@@ -1,0 +1,30 @@
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 50px;
+
+    padding: 50px 0px;
+
+    .error__404{
+        color: #FF6060;
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    .error__oups{
+        color: #FF6060;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .error__link{
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}
