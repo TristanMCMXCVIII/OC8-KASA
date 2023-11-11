@@ -9,7 +9,6 @@ header {
     flex-direction: column;
     align-items: center;
 
-    //background-color: aqua;
     background-color: #FFFFFF;
 }
 
@@ -24,10 +23,23 @@ header > div {
 
     padding : 20px 80px;
     box-sizing: border-box; /* Inclut le padding et la border dans la largeur */
-    //background-color: rgb(156, 58, 202);
+    
+    @media (max-width: 768px) {
+        padding : 20px 20px;
+    }
 }
 
-.header-nav ul {
+.header__logo{
+    width: 210px;
+    height: 68px;
+
+    @media (max-width: 768px) {
+        width: 145px;
+        height: 47px;
+    }
+}
+
+.header__nav ul {
     display: flex;
 
     list-style-type: none; /* enlever les puces de la liste à puces */
@@ -35,17 +47,21 @@ header > div {
     padding: 0px;
     margin: 0px;
     
-    column-gap: 25px;
-}
+    column-gap: 40px;
 
-.header-nav li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #FF6060;
-}
+    @media (max-width: 768px) {
+        column-gap: 20px;
+    }
 
-.header-nav li:hover {
-    text-decoration: underline;
+    li {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
 }
 
 

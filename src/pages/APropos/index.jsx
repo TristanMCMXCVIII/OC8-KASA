@@ -1,6 +1,8 @@
 import Dropdown from '../../components/Dropdown';
 import Banner from '../../components/Banner';
 
+import source2 from '../../assets/kasa-source2.jpg';
+
 
 import '../../utils/Layout.scss'
 import './APropos.scss';
@@ -10,7 +12,7 @@ function APropos() {
 	return (
 		<div className='layout'>
 			<div className='layout__container'>
-				<Banner/>
+				<Banner image={source2}/>
 				<div className='apropos'>
 					<Dropdown title='Fiabilité' points={['fruit','deux']} />
 					<Dropdown title='Respect' points={['fruit','deux']} />

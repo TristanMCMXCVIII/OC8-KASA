@@ -1,23 +1,25 @@
-import { useParams  } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 
 import '../../utils/Layout.scss';
-
-import logements from '../../datas/logements.json';
 
 import Carousel from '../../components/Carousel';
 import Informations from '../../components/Informations';
 
-function FicheLogement() {
+function FicheLogement({logements}) {
 
-  const { logementId } = useParams();
+	const { logementId } = useParams();
 
-  const logementDetails = logements.find( logement => logement.id === logementId )
+	const logement = logements.find( l => l.id === logementId )
+
+	if (!logement) {
+		return <Navigate to="/404" />;
+  	}
 
 	return (
 		<div className='layout'>
 			<div className='layout__container'>
-				<Carousel pictures={logementDetails.pictures}/>
-				<Informations logement={logementDetails}/>
+				<Carousel pictures={logement.pictures}/>
+				<Informations logement={logement}/>
 			</div>
 		</div>
 	);

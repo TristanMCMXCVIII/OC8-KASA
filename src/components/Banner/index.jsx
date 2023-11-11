@@ -1,13 +1,12 @@
 import './Banner.scss';
 
-import source1 from '../../assets/kasa-source1.jpg';
-
-function Banner() {
+function Banner({image, description=''}) {
 	
 	return(
-        <div className='image-container'>
-            <img src={source1} alt="Bannière de l'app" className='background-image'></img>
-            <div className='overlay-text'>Chez vous, partout et ailleurs</div>
+        <div className='banner__container'>
+            <img src={image} alt="Bannière de l'app" className='banner__image'></img>
+            <div className='banner__mask'></div>
+            <div className='banner__text'>{description}</div>
         </div>
     );
 };

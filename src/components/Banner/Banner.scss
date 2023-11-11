@@ -1,30 +1,57 @@
-.image-container {
+.banner__container {
     position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
 
     border-radius: 20px;
-}
 
-.background-image {
-    width: 100%;
-    height: 100%;
+    @media (max-width: 768px) {
+        height: 120px;
+        border-radius: 10px;
+    }
 
-    object-fit: cover;
-    object-position: center;
-}
+    .banner__image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
 
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+    }
 
-    color: white;
+    .banner__mask{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
 
-    font-family: 'Montserrat', sans-serif;
+        background-color: rgba(0,0,0, 0.3);
+    }
 
-    font-size: 40px;
-    font-weight: 500;
+    .banner__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        color: white;
+
+        font-family: 'Montserrat', sans-serif;
+
+        text-align: center;
+
+        font-size: 40px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+            left: 0px;
+            transform: translate(0%, -50%);
+            margin: 0px 20px;
+
+            text-align: left;
+            font-size: 24px;
+        }
+    }
 }

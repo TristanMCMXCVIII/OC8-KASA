@@ -16,7 +16,7 @@ function Carousels({pictures}) {
     const prevImage = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length); // prev index = 2 -> 2-1+4%4 = 1   ||  prevIndex = 0 -> 0-1+4%4 = 3
     };
-
+ 
 	return(
         <div className="carousel">
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className='carousel__picture'/>

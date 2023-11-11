@@ -9,16 +9,29 @@
 
     padding: 50px 0px;
 
+    @media (max-width: 768px) {
+        padding: 100px 0px;
+        row-gap: 100px;
+    }
+
     .error__404{
         color: #FF6060;
         font-size: 288px;
         font-weight: 700;
+
+        @media (max-width: 768px) {
+            font-size: 96px;
+        }
     }
 
     .error__oups{
         color: #FF6060;
         font-size: 36px;
         font-weight: 500;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     .error__link{
@@ -26,5 +39,9 @@
         font-size: 18px;
         font-weight: 500;
         text-decoration: underline;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

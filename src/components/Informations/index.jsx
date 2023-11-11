@@ -27,7 +27,7 @@ function Informations({logement}) {
                         <p>{logement.host.name}</p>
                         <img src={logement.host.picture} alt={logement.host.name}/>
                     </div>
-                    <Rating rating={logement.rating}/>
+                    <Rating rating={logement.rating} className='information__rating'/>
                     
                 </div>
             </div>

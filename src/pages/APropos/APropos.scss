@@ -3,9 +3,13 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    padding: 0 100px;
+    padding: 0px 100px;
 
     row-gap: 10px;
+
+    @media (max-width: 768px) {
+        padding: 0px 0px;
+    }
 
 
 }

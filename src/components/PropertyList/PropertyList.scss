@@ -8,4 +8,10 @@
     border-radius: 20px;
 
     background-color: #f6f6f6;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+        padding: 0px;
+        background-color: transparent;
+      }
 }

@@ -7,6 +7,10 @@
 
     background-color: #FF6060;
 
+    @media (max-width: 768px) {
+        height : 300px;
+    }
+
 
     .carousel__picture {
         position: absolute;
@@ -35,6 +39,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    
 
       
 
@@ -42,12 +47,22 @@
             object-fit: cover;
             height: 120px;
             width: 96px;
+
+            @media (max-width: 768px) {
+                height : 32px;
+                width : 32px;
+            }
         }
 
         .carousel__arrow-forward{
             object-fit: cover;
             height: 120px;
             width: 96px;
+
+            @media (max-width: 768px) {
+                height : 32px;
+                width : 32px;
+            }
         }
     }
 
@@ -69,5 +84,9 @@
 
         font-size: 18px;
         font-weight: 500;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
