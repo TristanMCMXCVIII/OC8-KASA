@@ -20,13 +20,17 @@ function Carousels({pictures}) {
 	return(
         <div className="carousel">
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className='carousel__picture'/>
-            <div className='carousel__arrows'>
-                <img src={arrowBackward} alt='arrow-backward' onClick={prevImage} className='carousel__arrow-backward'/>
-                <img src={arrowForward} alt='arrow-backward' onClick={nextImage} className='carousel__arrow-forward'/>
-            </div>
-            <div className="carousel__indicator">
-                {currentIndex + 1} / {pictures.length}
-            </div>
+            {pictures.length > 1 && (
+                <>
+                    <div className='carousel__arrows'>
+                        <img src={arrowBackward} alt='arrow-backward' onClick={prevImage} className='carousel__arrow-backward'/>
+                        <img src={arrowForward} alt='arrow-backward' onClick={nextImage} className='carousel__arrow-forward'/>
+                    </div>
+                    <div className="carousel__indicator">
+                        {currentIndex + 1} / {pictures.length}
+                    </div>
+                </>
+            )}
         </div>
     );
 };

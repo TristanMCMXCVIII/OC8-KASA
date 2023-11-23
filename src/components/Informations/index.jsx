@@ -32,8 +32,8 @@ function Informations({logement}) {
                 </div>
             </div>
             <div className='dropdowns'>
-                <Dropdown title='Description' points={['pomme', 'banane']}/>
-                <Dropdown title='Équipements' points={['climatisation', 'Wi-Fi', 'Cuisine', 'Espace de travail', 'Fer à cheval', 'Sèche-cheveux', 'Cintres']}/>
+                <Dropdown title='Description' points={Array(logement.description)}/>
+                <Dropdown title='Équipements' points={logement.equipments}/>
             </div>
         </div>
     );

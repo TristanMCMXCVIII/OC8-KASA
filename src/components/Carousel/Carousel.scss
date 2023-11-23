@@ -39,6 +39,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        
     
 
       
@@ -47,6 +48,7 @@
             object-fit: cover;
             height: 120px;
             width: 96px;
+            cursor: pointer;
 
             @media (max-width: 768px) {
                 height : 32px;
@@ -58,6 +60,7 @@
             object-fit: cover;
             height: 120px;
             width: 96px;
+            cursor: pointer;
 
             @media (max-width: 768px) {
                 height : 32px;
