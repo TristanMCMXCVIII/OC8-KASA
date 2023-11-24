@@ -1,10 +1,9 @@
 import Dropdown from '../Dropdown';
 import Rating from '../Rating';
+import Tags from '../Tags';
 import './Informations.scss';
 
 function Informations({logement}) {
-
-    const tags = logement.tags;
 
 	
 	return(
@@ -13,13 +12,8 @@ function Informations({logement}) {
                 <div className='informations__left'>
                     <h1 className='informations__title'>{logement.title}</h1>
                     <p className='informations__location'>{logement.location}</p>
-                    <ul>
-                    {tags.map( (tag) => (
-                        <li key={`${logement.id}-${tag}`}>
-                            {tag}
-                        </li>
-                    ))}
-                    </ul>
+
+                    <Tags logement={logement}/>
                     
                 </div>
                 <div className='informations__right'>

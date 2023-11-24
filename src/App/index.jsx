@@ -13,7 +13,6 @@ import logementsData from '../datas/logements.json';
 //import des données dans le router et le mettre en paramètre des composants <Route exact path='/' element={<Home logements={Logements}/>} />
 
 
-
 function App() {
 
     const [logements, setLogements] = useState([])
